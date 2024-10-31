@@ -48,6 +48,15 @@ public class DesenvolvedorWeb extends Desenvolvedor {
         return super.calcularSalario() + (horasMentoria * 300);
     }
 
+    @Override
+    public String toString() {
+        return "DesenvolvedorWeb{" +
+                "backend='" + backend + '\'' +
+                ", frontend='" + frontend + '\'' +
+                ", sgbd='" + sgbd + '\'' +
+                '}';
+    }
+
     public Boolean isFullstack() {
         return backend != null && frontend != null && sgbd != null;
     }

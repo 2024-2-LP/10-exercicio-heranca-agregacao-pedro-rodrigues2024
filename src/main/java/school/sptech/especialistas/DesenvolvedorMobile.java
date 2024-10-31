@@ -40,22 +40,12 @@ public class DesenvolvedorMobile extends Desenvolvedor {
         return super.calcularSalario() + (horasPrototipacao * 200);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "DesenvolvedorMobile{" +
+                "plataforma='" + plataforma + '\'' +
+                ", linguagem='" + linguagem + '\'' +
+                '}';
+    }
 }
 

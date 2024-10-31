@@ -36,9 +36,14 @@ public class Desenvolvedor {
         return qtdHoras * valorHora;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Desenvolvedor{" +
+                "nome='" + nome + '\'' +
+                ", qtdHoras=" + qtdHoras +
+                ", valorHora=" + valorHora +
+                '}';
+    }
 
 }
 
